@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Formulário de Avaliação</title>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="Imagens/icone-pagina.png">
+</head>
+
+<body bgcolor="#800000">
+    <font size="6" face="Goudy Old Style" color="#FFA500">
+        <a href="formularios.html"><img src="Imagens/voltar.png" alt="voltar"></a>
+        <center>
+            <h1>Avaliação</h1>
+        </center>
+        <form action="#" method="post">
+            <font color="white">
+                <fieldset>
+
+                    <legend>Nos avalie</legend>
+                    <label for="comentario">Comentário:</label><br>
+                    <textarea id="comentario" name="comentario" rows="4" cols="50" required></textarea><br>
+
+                    <label for="classificacao">Classificação:</label><br>
+                    <div class="estrelas">
+                        <input type="radio" id="estrela5" name="classificacao" value="5">
+                        <label for="estrela5">&#9733;</label>
+                        <input type="radio" id="estrela4" name="classificacao" value="4">
+                        <label for="estrela4">&#9733;</label>
+                        <input type="radio" id="estrela3" name="classificacao" value="3">
+                        <label for="estrela3">&#9733;</label>
+                        <input type="radio" id="estrela2" name="classificacao" value="2">
+                        <label for="estrela2">&#9733;</label>
+                        <input type="radio" id="estrela1" name="classificacao" value="1">
+                        <label for="estrela1">&#9733;</label>
+                    </div><br>
+                    <center>
+                        <button type="submit">Enviar Feedback</button>
+                    </center>
+                </fieldset>
+            </font>
+        </form>
+    </font>
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+<!doctype html />
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introdução ao CSS</title>
+    <link rel="shortcut icon" href="Imagens/icone-pagina.png">
+    <link rel="stylesheet" href="css/introducao-css.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="menu-container"></div>
+	<script src="js/menu.js"></script>
+
+
+    <a href="atividades.html"><img src="Imagens/voltar.png" alt="voltar" id="voltar"></a>
+
+    <h1 class="titulo">INTRODUÇÃO AO CSS</h1>
+
+    <section id="secao">
+        <p class="comentario">
+            Documentos CSS são empregados para estilizar o conteúdo de um documento HTML, ou seja, controlar a apresentação
+            de documentos de marcação.
+        </p>
+        <p class="comentario">
+            O HTML controla a estrutura de uma página, ao passo que o CSS determina sua aparência.
+        </p>
+        <p class="comentario">
+            Uma folha de estilos é uma coleção de regras de formatação aplicadas a um documento HTML.
+        </p>
+        <h2 class="subtitulo">Como aplicar o CSS</h2>
+        <p class="comentario">
+            As regras do CSS podem ser aplicadas de três formas distintas:
+        </p>
+        <ul class="aplicacao">
+            <li class="item">
+                <b>Inline:</b> estilos aplicados diretamente em um elemento HTML, dentro do documento
+            </li>
+            <li class="item">
+                <b>Incorporado:</b> O elemento style permite aplicar várias regras de uma vez no próprio documento HTML.
+            </li>
+            <li class="item">
+                <b>Folha de estilos externa:</b> um documento com extensão .css permite aplicar regras a um website inteiro
+                de uma
+                vez.
+            </li>
+        </ul>
+        <p class="comentario">
+            Os estilos são aplicados na ordem em que são encontrados, cascateando dos estilos externos até os estilos
+            inline.
+        </p>
+        <h2 class="subtitulo">Sintaxe de uma regra CSS</h2>
+        <p class="comentario">
+            Regra CSS é a unidade básica de construção de uma folha de estilos. Sintaxe de uma regra:
+        </p>
+    
+        <p class="sintaxe">
+            <code>seletor{ propriedade: valor;}</code>
+        </p>
+        <p class="comentario">
+            A regra é composta de um seletor (alvo da regra) e de uma declaração (parâmetros de estilo).
+        </p>
+        <p class="comentario">
+            A declaração, por sua vez, é composta por um par <b>propriedade: valor.</b>
+        </p>
+        <h2 class="subtitulo">Exemplo de uma regra CSS</h2>
+        <p class="comentario">
+            Abaixo temos uma regra CSS que aplica três declarações:
+        </p>
+        <p class="sintaxe">
+            <code>p{<br>
+                &nbsp;&nbsp;&nbsp;&nbsp; text-align: center;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp; color: yellow; <br>
+                &nbsp;&nbsp;&nbsp;&nbsp; font-size: 20px;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+            </code>
+        </p>
+        <ul class="aplicacao">
+            <li class="item">
+                <b>Seletor:</b> elemento p (regra aplicada a parágrafos)
+            </li>
+            <li class="item">
+                <b>Declarações:</b> text-align: center; color: yellow; font-size: 20px;
+            </li>
+            <li class="item">
+                <b>Propriedades:</b> Text-align, color e font-size.
+            </li>
+        </ul>
+        <h2 class="subtitulo">Tipos de seletores</h2>
+        <ol>
+            <li class="item">
+                <b>Seletor Universal:</b> Representa todos os elementos.
+                Simbolizado pelo *
+            </li>
+            <p class="coloridos">
+                <code>*{ color: green; } <b class="verde">/*todos os elementos do documento terão a cor verde.</b></code>
+            </p>
+            <li class="item">
+                <b>Seletor de Tipo (ou de Elemento):</b> Representa um determina elemento.
+            </li>
+            <p class="coloridos">
+                <code>p { color: red; } <b class="vermelho">/* todos os parágrafos terão texto na cor vermelha.</b></code><br>
+                <code>h1 { color: yellow; } <b class="amarelo">/* todos os elementos h1 terão texto em amarelo.</b></code>
+            </p>
+            <li class="item">
+                <b>Seletor de Classe:</b> Aplica estilo a elementos com o atributo class definido.
+            </li>
+            <p class="coloridos">
+                <code>.verde { color: green; } <b class="verde">/*Aplica cor verde aos elementos que possuam o atributo class="verde".</b></code><br>
+                <code>h1.verde { color: green; } <b class="verde">/*Aplica cor verde apenas elementos h1 que possuam o atributo class="verde".</b></code>
+            </p>
+            <li class="item">
+                <b>Seletor de ID:</b> Aplica estilo a elementos com o atributo id definido.
+            </li>
+            <p class="coloridos">
+                <code>#corAzul { color: blue; } <b class="azul">/*Aplica cor azul ao elemento que possua o atributo id="corAzul".</b></code><br>
+                <code>h1#corAzul { color: blue; } <b class="azul">/*Aplica cor azul ao elemento h1 que possua o atributo id="corAzul".</b></code>
+            </p>
+        </ol>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+<!doctype html />
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atividades</title>
+    <link rel="shortcut icon" href="Imagens/icone-pagina.png">
+    <link rel="stylesheet" href="css/controle.css">
+    <link rel="stylesheet" href="css/menu.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <div id="menu-container"></div>
+    <script src="js/menu.js"></script>
+
+    <a href="atividades.html"><img src="Imagens/voltar.png" alt="voltar" id="voltar"></a>
+    <h1 id="titulo">Televisão</h1>
+    <section class="secao">
+        <div id="tv-screen">
+            <p class="comentario">Estado: <span id="tv-status">Desligada</span></p>
+            <p class="comentario">Canal: <span id="tv-canal">1</span></p>
+            <p class="comentario">Volume: <span id="tv-volume">50</span></p>
+            <img id="tv-image" src="Imagens/tv-desligada.png" alt="Imagem da TV">
+            <input type="range" id="volumeRange" min="0" max="100" value="50" onchange="changeVolume()" disabled>
+        </div>
+
+        <div id="botoes">
+            <button onclick="ligarDesligar()"><img src="Imagens/ligar-desligar.png" class="button-image" alt=""></button><br>
+            <button onclick="mudarCanal(1)"><img src="Imagens/mudar-canal.png" class="button-image" alt=""></button>
+            <button onclick="mudarCanal(-1)"><img src="Imagens/mudar-canal (2).png" class="button-image" alt=""></button>
+            <button onclick="aumentarVolume()"><img src="Imagens/aumentar-volume.png" class="button-image" alt=""></button>
+            <button onclick="diminuirVolume()"><img src="Imagens/diminuir-volume.png" class="button-image" alt=""></button>
+        </div>
+
+    </section>
+
+    <script>
+        let tvLigada = false;
+        let canalAtual = 1;
+        let volumeAtual = 50;
+
+        const tvScreen = document.getElementById("tv-image");
+        tvScreen.src = "Imagens/tv-desligada.png";
+        const volumeRange = document.getElementById("volumeRange");
+        volumeRange.disabled = true;
+
+        function ligarDesligar() {
+            tvLigada = !tvLigada;
+            const statusElement = document.getElementById("tv-status");
+            if (tvLigada) {
+                statusElement.textContent = "Ligada";
+                tvScreen.src = "Imagens/tv-ligada.png";
+                volumeRange.disabled = false;
+            } else {
+                statusElement.textContent = "Desligada";
+                tvScreen.src = "Imagens/tv-desligada.png";
+                volumeRange.disabled = true;
+            }
+        }
+
+        function mudarCanal(delta) {
+            if (tvLigada) {
+                canalAtual += delta;
+                if (canalAtual < 1) {
+                    canalAtual = 1;
+                } else if (canalAtual > 3) {
+                    canalAtual = 3;
+                }
+                const canalElement = document.getElementById("tv-canal");
+                canalElement.textContent = canalAtual;
+                const tvImage = document.getElementById("tv-image");
+                tvImage.src = `Imagens/imagen_canal_${canalAtual}.png`;
+            }
+        }
+
+        function aumentarVolume() {
+            if (tvLigada) {
+                volumeAtual += 10;
+                if (volumeAtual > 100) {
+                    volumeAtual = 100;
+                }
+                updateVolumeDisplay();
+            }
+        }
+
+        function diminuirVolume() {
+            if (tvLigada) {
+                volumeAtual -= 10;
+                if (volumeAtual < 0) {
+                    volumeAtual = 0;
+                }
+                updateVolumeDisplay();
+            }
+        }
+
+        function changeVolume() {
+            if (tvLigada) {
+                volumeAtual = document.getElementById("volumeRange").value;
+                updateVolumeDisplay();
+            }
+        }
+
+        function updateVolumeDisplay() {
+            const volumeElement = document.getElementById("tv-volume");
+            volumeElement.textContent = volumeAtual;
+            document.getElementById("volumeRange").value = volumeAtual;
+        }
+    </script>
+</body>
+
+</html>

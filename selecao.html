@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Formulário de Seleção</title>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="Imagens/snake.png">
+</head>
+
+<body bgcolor="#800000">
+    <font size="6" face="Goudy Old Style" color="#FFA500">
+        <a href="formularios.html"><img src="Imagens/voltar.png" alt="voltar"></a>
+        <center>
+            <h1>Avaliação</h1>
+        </center>
+        <form action="#" method="post">
+            <font color="white">
+                <fieldset>
+                    <legend>Nos avalie</legend>
+                    <label for="produto">Selecione o(s) produto(s) desejado(s):</label><br>
+
+                    <select id="produto" name="produto[]" multiple>
+                        <option value="pizza">Pizza</option>
+                        <option value="hamburguer">Hamburguer</option>
+                        <option value="sushi">Sushi</option>
+                        <option value="salada">Salada</option>
+                    </select><br>
+
+                    <label for="observacoes">Observações:</label><br>
+                    <textarea id="observacoes" name="observacoes" rows="4" cols="50"></textarea><br>
+
+                    <button type="submit">Enviar Pedido</button>
+                </fieldset>
+            </font>
+        </form>
+    </font>
+</body>
+
+</html>

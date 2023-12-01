@@ -1,0 +1,89 @@
+body {
+    background-color: #9F86C0;
+    margin: 0;
+    border: 0;
+    font-family: 'Yeseva One';
+    max-width: 100%;
+}
+
+#voltar{
+    width: 90px;
+}
+
+.titulo{
+    text-align: center;
+    color: #231942;
+    font-size: 50px;
+}
+
+#secao{
+    background-color: #E0B1CB;
+    margin: 50px 200px 50px 200px;
+    padding: 50px 180px 50px 180px;
+    border-radius: 40px;
+}
+.subtitulo {
+    text-align: center;
+    color: #231942;
+    font-size: 20px;
+}
+
+.comentario{
+    text-align: justify;
+    color: white;
+    font-size: 20px;
+    text-indent: 90px;
+}
+
+b {
+    color: #5E548E;
+    text-align: center;
+}
+
+.aplicacao {
+    text-align: justify;
+    font-size: 3px;
+}
+
+.aplicacao .item,
+ol .item{
+    color: white;
+}
+
+.sintaxe {
+    font-size: 20px;
+    color: chocolate;
+    padding: 20px;
+
+}
+
+ol {
+    text-align: justify;
+    font-size: 30px;
+    color: white;
+
+}
+
+code{
+    font-size: 20px;
+}
+
+.coloridos{
+    color: chocolate;
+}
+
+.coloridos .verde {
+    color: green;
+}
+
+.coloridos .vermelho {
+    color: red;
+}
+
+.coloridos .amarelo {
+    color: yellow;
+}
+
+.coloridos .azul {
+    color: blue;
+}

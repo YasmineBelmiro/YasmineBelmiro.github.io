@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Formulário de Cadasttro</title>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="Imagens/icone-pagina.png">
+</head>
+
+<body bgcolor="#800000">
+    <font size="6" face="Goudy Old Style" color="white">
+        <a href="formularios.html"><img src="Imagens/voltar.png" alt="voltar"></a>
+        <center>
+            <h1>Cadastro de Usuário</h1>
+        </center>
+
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Dados</legend>
+                <p>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" size="40" required>
+                </p>
+
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" size="40" required>
+                </p>
+
+                <p>
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" size="40" required>
+                </p>
+
+                <p>
+                    <label for="idade">Idade:</label>
+                    <input type="number" id="idade" name="idade" min="18" required>
+                </p>
+
+                <p>
+                    <label for="genero">Gênero:</label>
+                    <select id="genero" name="genero">
+                        <option value="masculino">Masculino</option>
+                        <option value="feminino">Feminino</option>
+                        <option value="outro">Outro</option>
+                    </select><br>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="newsletter" name="newsletter" value="sim">
+                    <label for="newsletter">Desejo receber a newsletter</label><br>
+                </p>
+                <center>
+                    <button type="submit">Cadastrar</button>
+                    <button type="submit">Limpar</button>
+                </center>
+                <a href="formularios.html">Voltar</a>
+
+            </fieldset>
+        </form>
+    </font>
+</body>
+
+</html>

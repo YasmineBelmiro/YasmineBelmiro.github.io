@@ -1,0 +1,85 @@
+body {
+    background-color: #9F86C0;
+    margin: 0;
+    border: 0;
+    font-family: 'Yeseva One';
+    max-width: 100%;
+}
+
+
+#voltar {
+    width: 90px;
+
+}
+
+#titulo {
+    font-size: 70px;
+    color: #231942;
+    text-align: center;
+
+}
+
+.secao {
+    background-color: #E0B1CB;
+    display: flex;
+    flex-direction: row;
+    border-radius: 40px;
+    justify-content: center;
+    margin: 0 5%;
+}
+
+
+.comentario {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin: 10px;
+}
+
+#tv-screen {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#tv-image {
+    display: block;
+    margin: 0 auto;
+}
+
+#volumeRange {
+    margin: 0 30% 10% 30%;
+}
+
+button {
+    background-color: #9F86C0;
+    border-radius: 100%;
+    border: none;
+    width: 80px;
+    height: 80px; 
+
+}
+
+button:hover{
+    background-color: green;
+}
+
+
+.button-image{
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+#botoes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: black;
+    margin: 10% 1%;
+    padding: 3%;
+    gap: 40px;
+    border-radius: 40px;
+}

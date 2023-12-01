@@ -1,0 +1,85 @@
+<!doctype html />
+<html lang="pt-br">
+
+<head>
+    <title>Formulário do Jorci</title>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="Imagens/icone-pagina.png">
+</head>
+
+<body bgcolor="#800000">
+    <font size="5" face="Goudy Old Style" color="white">
+        <a href="formularios.html"><img src="Imagens/voltar.png" alt="voltar"></a>
+        <center>
+            <font color="#FFA500">
+                <h1><u>Formulário</u></h1>
+            </font>
+        </center>
+        <fieldset>
+            <legend>Fale conosco</legend>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Dados</legend>
+                    <p>
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome" placeholder="Digite seu nome" autocomplete="on"
+                            maxlength="30" size="40" required="">
+                    </p>
+                    <p>
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="email" placeholder="Digite seu email." autocomplete="on"
+                            maxlength="30" size="40" required>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Mensagem</legend>
+                    <p>
+                        Assunto:<br>
+                        <input type="radio" name="assunto" value="0" checked>Pessoal
+                        <input type="radio" nome="assunto" value="1">Public
+                    </p>
+                    <p>
+                        Enviar para: <br>
+                        <input type="checkbox" name="president" id="president" checked>
+                        <label for="copia">Presidente</label>
+
+                        <input type="checkbox" name="diretor" id="diretor">
+                        <label for="diretor">Diretor</label>
+                    </p>
+
+                    <p>
+                        <label for="tempo">Quantso meses está trabalhando na empresa?</label>
+                        <input type="date" id=data name=data required="">
+                    </p>
+                    <p>
+                        <label for="nome">Data do ocorrido?</label>
+                        <input type="date" id="data" name="data" required="">
+                    </p>
+                    <p>
+                        <label for="nome">Qual o setor?</label>
+                        <select id="UF" name="setor">
+                            <option value="">Selecione</option>
+                            <option value="AC">Compras</option>
+                            <option value="AL">Vendas</option>
+                            <option value="AP">Produção</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="arquivo">Tem fatos</label>
+                        <input type="file" name="fatos" id="fatos">
+                    </p>
+
+                    <label for="mensagem">Escreva mensagens</label><br>
+                    <textarea type="text" id="mensagem" name="mensagem" rows="3" placeholder="mensagem"
+                        autocomplete="off" required=""></textarea>
+                </fieldset>
+                <p align="center">
+                    <input type="submit" name="enviar" value="enviar">
+                    <input type="reset" name="limpar" value="limpar">
+                </p>
+        </fieldset>
+        </form>
+    </font>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+body {
+    background-image: url('https://64.media.tumblr.com/0c56f25f4574b20f0f65738a15263829/tumblr_oshxtlwLVn1ufkj40o1_1280.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    border: 0;
+    font-family: 'Yeseva One';
+    
+}
+
+.menu_botoes {
+    margin: 20% 40% 0 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+a {
+    background-color: #231942;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px 50px;
+    border-radius: 40px;
+    
+}
+
+a:hover{
+    background-color: #5E548E   ;
+}

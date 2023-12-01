@@ -1,0 +1,58 @@
+body {
+    background-color: #9F86C0;
+    margin: 0;
+    border: 0;
+    font-family: 'Yeseva One';
+    max-width: 100%;
+}
+
+section {
+    padding-top: 2rem;
+}
+
+section h1 {
+    align-items: center;
+    text-align: center;
+    font-size: 5rem;
+    color: #231942;
+
+}
+
+.animacao {
+    position: absolute;
+    top: 22%;
+    left: -500px; /* Inicialmente, a imagem começa fora da tela na esquerda */
+    animation: moveImage 10s linear 1;
+}
+
+@keyframes moveImage {
+    to {
+       left: 100%; /* A imagem se moverá até a borda direita da tela */
+    }
+}
+
+#gif{
+    width: 200px;
+    height: auto;
+}
+
+.lista-atividades {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-top: 2rem;
+    margin: 0px 200px 100px 200px;
+}
+
+.atividade img {
+    width: 300px;
+    height: auto;
+    transition: 0.35s ease;
+    border-radius: 14px;
+}
+
+.atividade img:hover {
+    transform: scale(0.9) translateY(-5px);
+    cursor: pointer;
+}

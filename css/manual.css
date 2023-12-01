@@ -1,0 +1,113 @@
+body {
+    background-color: #9F86C0;
+    margin: 0;
+    border: 0;
+    font-family: 'Yeseva One';
+    max-width: 100%;
+}
+
+#voltar{
+    width: 90px;
+    
+}
+
+#titulo{
+    font-size: 70px;
+    color: #231942;
+    text-align: center;
+   
+}
+
+.container{
+    background-color: #E0B1CB;
+    margin: 50px 150px 50px 150px;
+    padding: 50px 100px 50px 150px;
+    border-radius: 40px;
+}
+.nav-indice {
+    background-color: #E0B1CB;
+    border-radius: 50px;
+    align-items: center;
+    margin: 0px 150px 0px 150px;
+}
+
+.nav-indice,
+.indice{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+
+.indice {
+    list-style: none;
+    padding: 0;
+    overflow: hidden;
+    transition: all .5s;
+}
+
+.indice-item {
+    font-size: 30px;
+    text-decoration: none;
+    color: #5E548E;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.indice-item:hover{
+   cursor: pointer;
+   opacity: 0.4;
+
+}
+
+.comentario {
+    color: white;
+    font-size: 30px;
+    text-align: justify;
+    text-indent: 90px;
+}
+
+.subtitulo{
+    color: #231942;
+    font-size: 40px;
+    text-align: center;
+}
+
+.secao {
+    color: #231942;
+    font-size: 30px;
+
+}
+
+.extras {
+    color: white;
+    font-size: 30px;
+    text-align: justify;
+    list-style-type: square;
+}
+
+b {
+    color: #231942;
+    font-size: 40px;
+
+}
+
+code {
+    color: #5E548E;
+    font-size: 25px;
+}
+
+#subir, .exemplo{
+    display: block;
+    margin: 0 auto;
+
+}
+
+.link {
+    color: #231942;
+}
+
+.exemplo{
+    width: 500px;
+}
